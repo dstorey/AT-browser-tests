@@ -76,6 +76,10 @@ body > h1 {
 	font: 300 1.75em/1 "Work Sans", sans-serif;
 }
 
+.meta {
+	display: none;
+}
+
 .meta h2,
 .reference,
 .test-title,
