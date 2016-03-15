@@ -1,3 +1,7 @@
+input:focus {
+     background-color: yellow;
+}
+
 @font-face {
 	font-family: "League Spartan";
 	src: url("../fonts/leaguespartan-bold.woff2") format("woff2"),
