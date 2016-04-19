@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>test file: nav element</title>
-		<link rel="stylesheet" href="../style/styles.css" />
-	</head>
-	<body>
-		<h1><code>nav</code> element test</h1>
-		<div class="meta">
-			<div class="criteria">
-				<h2>Pass Criteria</h2>
-				<ul id="criteria-list">
-					<li id="basic-criteria">#1: Element is supported</li>
-					<li>#2: Correct HTML and Core Accessibility API mappings</li>
-					<li>#3: Correct Accessible Name &amp; Description Calculation</li>
-				</ul>
-			</div>
+    <head>
+        <meta charset="utf-8">
+        <title>test file: nav element</title>
+        <link rel="stylesheet" href="../style/styles.css" />
+    </head>
+    <body>
+        <h1><code>nav</code> element test</h1>
+        <div class="meta">
+            <div class="criteria">
+                <h2>Pass Criteria</h2>
+                <ul id="criteria-list">
+                    <li id="basic-criteria">#1: Element is supported</li>
+                    <li>#2: Correct HTML and Core Accessibility API mappings</li>
+                    <li>#3: Correct Accessible Name &amp; Description Calculation</li>
+                </ul>
+            </div>
 
-			<div class="reference">
-				<h2>Reference</h2>
-				<ul>
-					<li><a href="http://www.w3.org/TR/html5/sections.html#the-nav-element">HTML5 nav element</a></li>
-					<li><a href="https://w3c.github.io/aria/html-aam/html-aam.html#el-nav">HTML Accessibility API Mappings for nav element</a></li>
-					<li><a href="https://w3c.github.io/aria/core-aam/core-aam.html#role-map-navigation">Core Accessibility API Mappings for navigation role</a></li>
-					<li><a href="https://w3c.github.io/aria/html-aam/html-aam.html#section-and-grouping-element-accessible-name-calculation">Accessible Name Calculation</a></li>
-					<li><a href="https://w3c.github.io/aria/html-aam/html-aam.html#section-and-grouping-element-accessible-description-calculation">Accessible Description Calculation</a></li>
-				</ul>
-			</div>
-		</div>
+            <div class="reference">
+                <h2>Reference</h2>
+                <ul>
+                    <li><a href="http://www.w3.org/TR/html5/sections.html#the-nav-element">HTML5 nav element</a></li>
+                    <li><a href="https://w3c.github.io/aria/html-aam/html-aam.html#el-nav">HTML Accessibility API Mappings for nav element</a></li>
+                    <li><a href="https://w3c.github.io/aria/core-aam/core-aam.html#role-map-navigation">Core Accessibility API Mappings for navigation role</a></li>
+                    <li><a href="https://w3c.github.io/aria/html-aam/html-aam.html#section-and-grouping-element-accessible-name-calculation">Accessible Name Calculation</a></li>
+                    <li><a href="https://w3c.github.io/aria/html-aam/html-aam.html#section-and-grouping-element-accessible-description-calculation">Accessible Description Calculation</a></li>
+                </ul>
+            </div>
+        </div>
 
-		<div class="test">
-			<h2 class="test-title" id="nv-001">Test nv-001: Nav element</h2>
+        <div class="test">
+            <h2 class="test-title" id="nv-001">Test nv-001: Nav element</h2>
 
-			<div class="test-case">
-				<nav id="nav1">
-					<h2>You are here:</h2>
-					<ul id="navlist">
-						<li><a href="/">Main</a> →</li>
-						<li><a href="/products/">Products</a> →</li>
-						<li><a href="/products/dishwashers/">Dishwashers</a> →</li>
-						<li><a>Second hand</a></li>
-					</ul>
-				</nav>
-			</div>
+            <div class="test-case">
+                <nav id="nav1">
+                    <h2>You are here: 1</h2>
+                    <ul id="navlist1">
+                        <li><a href="/">Main</a> →</li>
+                        <li><a href="/products/">Products</a> →</li>
+                        <li><a href="/products/dishwashers/">Dishwashers</a> →</li>
+                        <li><a>Second hand</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-			<h3 class="code-title">Code</h3>
-			<pre><code>&lt;nav>
-	&lt;h2>You are here:&lt;/h2>
-	&lt;ul>
-		&lt;li>&lt;a href="/">Main&lt;/a> →&lt;/li>
-		&lt;li>&lt;a href="/products/">Products&lt;/a> →&lt;/li>
-		&lt;li>&lt;a href="/products/dishwashers/">Dishwashers&lt;/a> →&lt;/li>
-		&lt;li>&lt;a>Second hand&lt;/a>&lt;/li>
-	&lt;/ul>
+            <h3 class="code-title">Code</h3>
+            <pre><code>&lt;nav>
+    &lt;h2>You are here:&lt;/h2>
+    &lt;ul>
+        &lt;li>&lt;a href="/">Main&lt;/a> →&lt;/li>
+        &lt;li>&lt;a href="/products/">Products&lt;/a> →&lt;/li>
+        &lt;li>&lt;a href="/products/dishwashers/">Dishwashers&lt;/a> →&lt;/li>
+        &lt;li>&lt;a>Second hand&lt;/a>&lt;/li>
+    &lt;/ul>
 &lt;/nav></code></pre>
-		</div>
-		
-		<div class="test">
-			<h2 class="test-title" id="nv-002">Test nv-002: nav with <code>aria-label</code></h2>
+        </div>
 
-			<div class="test-case">
-				<nav aria-label="aria-label attribute">Aria-label should be used as accessible name.</nav>
-			</div>
-			
-			<h3 class="code-title">Code</h3>
-			<pre><code>&lt;nav <strong>aria-label="aria-label attribute"</strong>>Aria-label should be used as accessible name.&lt;/nav></code></pre>
-		</div>
-		
-		<div class="test">
-			<h2 class="test-title" id="nv-003">Test nv-003: nav with <code>aria-labelledby</code></h2>
+        <div class="test">
+            <h2 class="test-title" id="nv-002">Test nv-002: nav with <code>aria-label</code> 2</h2>
 
-			<div class="test-case">
-				<nav aria-labelledby="nv-003-labelledby">
-					<h1 id="nv-003-labelledby">h1 referenced by aria-labelledby</h1>
-					Aria-labelledby should be used as accessible name.
-				</nav>
-			</div>
-			
-			<h3 class="code-title">Code</h3>
-			<pre><code>&lt;nav <strong>aria-labelledby="nv-003-labelledby"</strong>>
-	&lt;h1 <strong>id="nv-003-labelledby"</strong>>h1 referenced by aria-labelledby&lt;/h1>
-	Aria-labelledby should be used as accessible name.
+            <div class="test-case">
+                <nav aria-label="aria-label attribute 2">Aria-label should be used as accessible name. 2</nav>
+            </div>
+
+            <h3 class="code-title">Code</h3>
+            <pre><code>&lt;nav <strong>aria-label="aria-label attribute"</strong>>Aria-label should be used as accessible name.&lt;/nav></code></pre>
+        </div>
+
+        <div class="test">
+            <h2 class="test-title" id="nv-003">Test nv-003: nav with <code>aria-labelledby</code></h2>
+
+            <div class="test-case">
+                <nav aria-labelledby="nv-003-labelledby 3">
+                    <h1 id="nv-003-labelledby3">h1 referenced by aria-labelledby</h1>
+                    Aria-labelledby should be used as accessible name. 3
+                </nav>
+            </div>
+
+            <h3 class="code-title">Code</h3>
+            <pre><code>&lt;nav <strong>aria-labelledby="nv-003-labelledby"</strong>>
+    &lt;h1 <strong>id="nv-003-labelledby"</strong>>h1 referenced by aria-labelledby&lt;/h1>
+    Aria-labelledby should be used as accessible name.
 &lt;/nav></code></pre>
-		</div>
-		
-		<div class="test">
-			<h2 class="test-title" id="nv-004">Test nv-004: Nav element with <code>title</code> attribute</h2>
+        </div>
 
-			<div class="test-case">
-				<nav title="title attribute">
-					<p>Title should be used as accessible name.</p>
-				</nav>
-			</div>
-			
-			<h3 class="code-title">Code</h3>
-			<pre><code>&lt;nav title="title attribute">
-	&lt;p>Title should be used as accessible name.&lt;/p>
+        <div class="test">
+            <h2 class="test-title" id="nv-004">Test nv-004: Nav element with <code>title</code> attribute</h2>
+
+            <div class="test-case">
+                <nav title="title attribute 4">
+                    <p>Title should be used as accessible name. 4</p>
+                </nav>
+            </div>
+
+            <h3 class="code-title">Code</h3>
+            <pre><code>&lt;nav title="title attribute">
+    &lt;p>Title should be used as accessible name.&lt;/p>
 &lt;/nav></code></pre>
-		</div>
-		
-		<div class="test">
-			<h2 class="test-title" id="nv-005">Test nv-005: nav with <code>aria-describedby</code></h2>
+        </div>
 
-			<div class="test-case">
-				<nav aria-describedby="nv-005-describedby">
-					<h1 id="nv-005-describedby">h1 referenced by aria-describedby</h1>
-					Aria-describedby should be used as accessible description.
-				</nav>
-			</div>
-			
-			<h3 class="code-title">Code</h3>
-			<pre><code>&lt;nav <strong>aria-labelledby="nv-005-describedby"</strong>>
-	&lt;h1 <strong>id="nv-005-describedby"</strong>>h1 referenced by aria-describedby&lt;/h1>
-	Aria-describedby should be used as accessible description.
+        <div class="test">
+            <h2 class="test-title" id="nv-005">Test nv-005: nav with <code>aria-describedby</code></h2>
+
+            <div class="test-case">
+                <nav aria-describedby="nv-005-describedby 5">
+                    <h1 id="nv-005-describedby5">h1 referenced by aria-describedby</h1>
+                    Aria-describedby should be used as accessible description. 5
+                </nav>
+            </div>
+
+            <h3 class="code-title">Code</h3>
+            <pre><code>&lt;nav <strong>aria-labelledby="nv-005-describedby"</strong>>
+    &lt;h1 <strong>id="nv-005-describedby"</strong>>h1 referenced by aria-describedby&lt;/h1>
+    Aria-describedby should be used as accessible description.
 &lt;/nav></code></pre>
-		</div>
-		
-		<div class="test">
-			<h2 class="test-title" id="nv-006">Test nv-006: nav with <code>aria-label</code> &amp; <code>title</code> attributes</h2>
+        </div>
 
-			<div class="test-case">
-				<nav aria-label="aria-label attribute" title="title attribute">
-					<p>Aria-label should be used as accessible name.</p>
-					<p>Title should be used as accessible description.</p>
-				</nav>
-			</div>
-			
-			<h3 class="code-title">Code</h3>
-			<pre><code>&lt;nav <strong>aria-label="aria-label attribute" title="title attribute"</strong>>
-	&lt;p>Aria-label should be used as accessible name.&lt;/p>
-	&lt;p>Title should be used as accessible description.&lt;/p>
+        <div class="test">
+            <h2 class="test-title" id="nv-006">Test nv-006: nav with <code>aria-label</code> &amp; <code>title</code> attributes</h2>
+
+            <div class="test-case">
+                <nav aria-label="aria-label attribute 6" title="title attribute 6">
+                    <p>Aria-label should be used as accessible name. 6</p>
+                    <p>Title should be used as accessible description. 6</p>
+                </nav>
+            </div>
+
+            <h3 class="code-title">Code</h3>
+            <pre><code>&lt;nav <strong>aria-label="aria-label attribute" title="title attribute"</strong>>
+    &lt;p>Aria-label should be used as accessible name.&lt;/p>
+    &lt;p>Title should be used as accessible description.&lt;/p>
 &lt;/nav></code></pre>
-		</div>
+        </div>
 
-		<script src="../scripts/test-scripts.js"></script>
-		<script>
-			var test = [],
-				el = document.getElementById('nav1'),
-				isSupported = (el instanceof HTMLElement && !(el instanceof HTMLUnknownElement));
-			
-			test.push({id: "basic-criteria", pass: isSupported});
-			displaySupportResults(test);
-		</script>
-	</body>
+        <script src="../scripts/test-scripts.js"></script>
+        <script>
+            var test = [],
+                el = document.getElementById('nav1'),
+                isSupported = (el instanceof HTMLElement && !(el instanceof HTMLUnknownElement));
+
+            test.push({id: "basic-criteria", pass: isSupported});
+            displaySupportResults(test);
+        </script>
+    </body>
 </html>
