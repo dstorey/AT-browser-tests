@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -76,12 +76,12 @@
 		<script>
 			var test = [],
 				el = document.getElementById('video1'),
-			    isSupported = (typeof HTMLVideoElement != 'undefined' 
-				               && el instanceof HTMLVideoElement && !!el.canPlayType);
+				isSupported = (typeof HTMLVideoElement != 'undefined' 
+							   && el instanceof HTMLVideoElement && !!el.canPlayType);
 			
 			el = document.getElementById('track1'),
 			isSupported = isSupported && (typeof HTMLTrackElement != 'undefined' 
-				           && el instanceof HTMLTrackElement && 'src' in el);
+						   && el instanceof HTMLTrackElement && 'src' in el);
 			
 			test.push({id: "basic-criteria", pass: isSupported});
 			displaySupportResults(test);
