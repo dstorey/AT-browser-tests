@@ -49,8 +49,8 @@
 			<h2 class="test-title" id="mi-002">Test mi-002: Input type="month" with <code>aria-label</code></h2>
 
 			<div class="test-case">
-				<input id="input2" type="month" aria-label="aria-label attribute" />
-				
+				<input id="input2" type="month" aria-label="aria-label attribute2" />
+
 				<p>Aria-label should be used as accessible name</p>
 			</div>	
 	
@@ -62,12 +62,12 @@
 			<h2 class="test-title" id="mi-003">Test mi-003: Input type="month" with <code>aria-labelledby</code></h2>
 
 			<div class="test-case">
-				<p id="mi-003-labelledby">p referenced by aria-labelledby</p>
-				<input id="input3" type="month" aria-labelledby="mi-003-labelledby" />
-				
+				<p id="mi-003-labelledby3">p referenced by aria-labelledby3</p>
+				<input id="input3" type="month" aria-labelledby="mi-003-labelledby3" />
+
 				<p>Aria-labelledby should be used as accessible name</p>
 			</div>	
-	
+
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;p id="mi-003-labelledby">p referenced by aria-labelledby&lt;/p>
 &lt;input id="input3" type="month" aria-labelledby="mi-003-labelledby" /></code></pre>
@@ -77,20 +77,20 @@
 			<h2 class="test-title" id="mi-004">Test mi-004: Input type="month" with label</h2>
 
 			<div class="test-case">
-				<label>label wrapping input <input id="input4" type="month" /></label>
-				
+				<label>label wrapping input 4<input id="input4" type="month" /></label>
+
 				<p>Label should be used as accessible name</p>
 			</div>
 
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;label>label wrapping input &lt;input id="input4" type="month" />&lt;/label></code></pre>
 		</div>
-		
+
 		<div class="test">
 			<h2 class="test-title" id="mi-005">Test mi-005: Input type="month" with <code>title</code> attribute</h2>
 
 			<div class="test-case">
-				<input id="input5" type="month" title="title attribute" />
+				<input id="input5" type="month" title="title attribute 5" />
 				
 				<p>Title should be used as accessible name</p>
 			</div>	
@@ -103,8 +103,8 @@
 			<h2 class="test-title" id="mi-006">Test mi-006: Input type="month" with <code>aria-describedby</code></h2>
 
 			<div class="test-case">
-				<input id="input6" type="month" aria-describedby="mi-006-describedby" />
-				<p id="mi-006-describedby">p referenced by aria-describedby</p>
+				<input id="input6" type="month" aria-describedby="mi-006-describedby6" />
+				<p id="mi-006-describedby6">p referenced by aria-describedby6</p>
 				
 				<p>Aria-describedby should be used as accessible description</p>
 			</div>	
@@ -118,8 +118,8 @@
 			<h2 class="test-title" id="mi-007">Test mi-007: Input type="month" with <code>label</code> element &amp; <code>title</code> attribute</h2>
 
 			<div class="test-case">
-				<label for="input7">label referenced by for/id attributes</label>
-				<input id="input7" type="month" title="title attribute" />
+				<label for="input7">label referenced by for/id attributes 7</label>
+				<input id="input7" type="month" title="title attribute 7" />
 				
 				<p>Label should be used as accessible name</p>
 				<p>Title should be used as accessible description</p>
