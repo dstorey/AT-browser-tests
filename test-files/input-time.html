@@ -22,7 +22,7 @@
 					</li>
 				</ul>
 			</div>
-
+			
 			<div class="reference">	
 				<h2>Reference</h2>
 				<ul>
@@ -44,7 +44,7 @@
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;input id="input1" type="time" /></code></pre>
 		</div>
-
+		
 		<div class="test">
 			<h2 class="test-title" id="ti-002">Test ti-002: Input type="time" with <code>aria-label</code></h2>
 
@@ -52,7 +52,8 @@
 				<input id="input2" type="time" aria-label="aria-label attribute 2" />
 				
 				<p>Aria-label should be used as accessible name</p>
-			</div>
+				<p>No accessible description.</p>
+			</div>	
 	
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;input id="input2" type="time" aria-label="aria-label attribute" /></code></pre>
@@ -66,6 +67,7 @@
 				<input id="input3" type="time" aria-labelledby="ti-003-labelledby3" />
 				
 				<p>Aria-labelledby should be used as accessible name</p>
+				<p>No accessible description.</p>
 			</div>	
 	
 			<h3 class="code-title">Code</h3>
@@ -80,6 +82,7 @@
 				<label>label wrapping input 4<input id="input4" type="time" /></label>
 				
 				<p>Label should be used as accessible name</p>
+				<p>No accessible description.</p>
 			</div>
 
 			<h3 class="code-title">Code</h3>
@@ -93,6 +96,7 @@
 				<input id="input5" type="time" title="title attribute 5" />
 				
 				<p>Title should be used as accessible name</p>
+				<p>No accessible description.</p>
 			</div>	
 	
 			<h3 class="code-title">Code</h3>
@@ -107,8 +111,9 @@
 				<p id="ti-006-describedby6">p referenced by aria-describedby6</p>
 				
 				<p>Aria-describedby should be used as accessible description</p>
-			</div>
-
+				<p>No accessible name.</p>
+			</div>	
+	
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;input id="input6" type="time" aria-describedby="ti-006-describedby" />
 &lt;p id="ti-006-describedby">p referenced by aria-describedby&lt;/p></code></pre>
@@ -130,12 +135,12 @@
 &lt;input id="input7" type="time" title="title attribute" /></code></pre>
 		</div>
 
-		<script src="../scripts/test-scripts.js"></script>
+		<script src="../scripts/test-scripts.js"></script>		
 		<script>
 			var test = [],
 				el = document.getElementById('input1'),
 			    isSupported = (el.type === 'time');
-
+			
 			test.push({id: "basic-criteria", pass: isSupported});
 			displaySupportResults(test);
 		</script>

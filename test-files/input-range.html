@@ -53,8 +53,9 @@
 				<input id="input2" type="range" min="-100" max="100" value="10" step="10" aria-label="aria-label attribute 2" />
 
 				<p>Aria-label should be used as accessible name 2</p>
-			</div>
-
+				<p>No accessible description.</p>
+			</div>	
+	
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;input id="input2" type="range" min="-100" max="100" value="10" step="10" aria-label="aria-label attribute" /></code></pre>
 		</div>
@@ -67,8 +68,8 @@
 				<input id="input3" type="range" min="-100" max="100" value="10" step="10" aria-labelledby="ri-003-labelledby3" />
 
 				<p>Aria-labelledby should be used as accessible name3</p>
-			</div>
-
+				<p>No accessible description.</p>
+			</div>	
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;p id="ri-003-labelledby">p referenced by aria-labelledby&lt;/p>
 &lt;input id="input3" type="range" min="-100" max="100" value="10" step="10" aria-labelledby="ri-003-labelledby" /></code></pre>
@@ -81,6 +82,7 @@
 				<label>label wrapping input 4<input id="input4" type="range" min="-100" max="100" value="10" step="10" /></label>
 
 				<p>Label should be used as accessible name</p>
+				<p>No accessible description.</p>
 			</div>
 
 			<h3 class="code-title">Code</h3>
@@ -94,8 +96,9 @@
 				<input id="input5" type="range" min="-100" max="100" value="10" step="10" title="title attribute 5" />
 
 				<p>Title should be used as accessible name</p>
-			</div>
-
+				<p>No accessible description.</p>
+			</div>	
+	
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;input id="input5" type="range" min="-100" max="100" value="10" step="10" title="title attribute" /></code></pre>
 		</div>
@@ -108,8 +111,9 @@
 				<p id="ri-006-describedby6">p referenced by aria-describedby6</p>
 
 				<p>Aria-describedby should be used as accessible description</p>
-			</div>
-
+				<p>No accessible name.</p>
+			</div>	
+	
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;input id="input6" type="range" min="-100" max="100" value="10" step="10" aria-describedby="ri-006-describedby" />
 &lt;p id="ri-006-describedby">p referenced by aria-describedby&lt;/p></code></pre>

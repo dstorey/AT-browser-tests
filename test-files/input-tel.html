@@ -50,6 +50,7 @@
 				<input id="input2" type="tel" aria-label="aria-label attribute 2" />
 				
 				<p>Aria-label should be used as accessible name</p>
+				<p>No accessible description.</p>
 			</div>	
 	
 			<h3 class="code-title">Code</h3>
@@ -64,8 +65,9 @@
 				<input id="input3" type="tel" aria-labelledby="tl-003-labelledby3" />
 				
 				<p>Aria-labelledby should be used as accessible name</p>
-			</div>
-
+				<p>No accessible description.</p>
+			</div>	
+	
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;p id="tl-003-labelledby">p referenced by aria-labelledby&lt;/p>
 &lt;input id="input3" type="tel" aria-labelledby="tl-003-labelledby" /></code></pre>
@@ -78,6 +80,7 @@
 				<label>label wrapping input 4<input id="input4" type="tel" /></label>
 
 				<p>Label should be used as accessible name</p>
+				<p>No accessible description.</p>
 			</div>
 
 			<h3 class="code-title">Code</h3>
@@ -91,12 +94,13 @@
 				<input id="input5" type="tel" title="title attribute 5" />
 
 				<p>Title should be used as accessible name</p>
+				<p>No accessible description.</p>
 			</div>	
 
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;input id="input5" type="tel" title="title attribute" /></code></pre>
 		</div>
-
+		
 		<div class="test">
 			<h2 class="test-title" id="tl-006">Test tl-006: Input type="tel" with <code>aria-describedby</code></h2>
 
@@ -105,6 +109,7 @@
 				<p id="tl-006-describedby6">p referenced by aria-describedby6</p>
 
 				<p>Aria-describedby should be used as accessible description</p>
+				<p>No accessible name.</p>
 			</div>	
 	
 			<h3 class="code-title">Code</h3>
@@ -121,8 +126,8 @@
 
 				<p>Label should be used as accessible name</p>
 				<p>Title should be used as accessible description</p>
-			</div>
-
+			</div>	
+	
 			<h3 class="code-title">Code</h3>
 			<pre><code>&lt;label for="input7">label referenced by for/id attributes&lt;/label>
 &lt;input id="input7" type="tel" title="title attribute" /></code></pre>
@@ -135,7 +140,7 @@
 			var test = [],
 				el = document.getElementById('input1'),
 			    isSupported = (el.type === 'tel');
-
+			
 			test.push({id: "basic-criteria", pass: isSupported});
 			displaySupportResults(test);
 		</script>
