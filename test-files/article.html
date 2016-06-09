@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -33,20 +33,20 @@
 			<h2 class="test-title" id="ar-001">Test ar-001: Plain Article</h2>
 
 			<div class="test-case">
-				<article id="article1">Lorem ipsum...</article>
+				<article id="article1">Lorem ipsum... 1</article>
 			</div>
 
 			<h3 class="code-title">Code</h3>
-			<pre><code>&lt;article>Lorem ipsum...&lt;/article></code></pre>
+			<pre><code>&lt;article>Lorem ipsum... 1&lt;/article></code></pre>
 		</div>
 
 		<div class="test">
 			<h2 class="test-title" id="ar-002">Test ar-002: Article with <code>&lt;h1></code></h2>
 
 			<div class="test-case">
-				<article>
-					<h1>Once upon a time</h1>
-					Lorem ipsum…
+				<article id="article2">
+					<h1>Once upon a time 2</h1>
+					Lorem ipsum… 2
 				</article>
 			</div>
 
@@ -61,8 +61,8 @@
 			<h2 class="test-title" id="ar-003">Test ar-003: Article with <code>aria-label</code></h2>
 
 			<div class="test-case">
-				<article aria-label="aria-label attribute">
-					<p>Aria-label should be used as accessible name.</p>
+				<article aria-label="aria-label attribute 3">
+					<p>Aria-label should be used as accessible name. 3</p>
 					<p>No accessible description.</p>
 				</article>
 			</div>
@@ -77,9 +77,9 @@
 			<h2 class="test-title" id="ar-004">Test ar-004: Article with <code>aria-labelledby</code></h2>
 
 			<div class="test-case">
-				<article aria-labelledby="ar-004-labelledby">
-					<h1 id="ar-004-labelledby">h1 referenced by aria-labelledby</h1>
-					<p>Aria-labelledby should be used as accessible name.</p>
+				<article aria-labelledby="ar-004-labelledby4">
+					<h1 id="ar-004-labelledby4">h1 referenced by aria-labelledby4</h1>
+					<p>Aria-labelledby should be used as accessible name. 4</p>
 					<p>No accessible description.</p>
 				</article>
 			</div>
@@ -92,11 +92,11 @@
 		</div>
 
 		<div class="test">
-			<h2 class="test-title" id="ar-005">Test ar-005: Article with <code>title</code> attribute</h2>
+			<h2 class="test-title" id="article5">Test ar-005: Article with <code>title</code> attribute</h2>
 
 			<div class="test-case">
-				<article title="title attribute">
-					<p>Title should be used as accessible name.</p>
+				<article title="title attribute 5">
+					<p>Title should be used as accessible name. 5</p>
 					<p>No accessible description.</p>
 				</article>
 			</div>
@@ -111,9 +111,9 @@
 			<h2 class="test-title" id="ar-006">Test ar-006: Article with <code>aria-describedby</code></h2>
 
 			<div class="test-case">
-				<article aria-describedby="ar-006-describedby">
-					<h1 id="ar-006-describedby">h1 referenced by aria-describedby</h1>
-					<p>Aria-describedby should be used as accessible description.</p>
+				<article aria-describedby="ar-006-describedby6">
+					<h1 id="ar-006-describedby6">h1 referenced by aria-describedby6</h1>
+					<p>Aria-describedby should be used as accessible description. 6</p>
 					<p>No accessible name.</p>
 				</article>
 			</div>
@@ -129,9 +129,9 @@
 			<h2 class="test-title" id="ar-007">Test ar-007: Article with <code>aria-label</code> &amp; <code>title</code> attributes</h2>
 
 			<div class="test-case">
-				<article aria-label="aria-label attribute" title="title attribute">
-					<p>Aria-label should be used as accessible name.</p>
-					<p>Title should be used as accessible description.</p>
+				<article aria-label="aria-label attribute 7" title="title attribute 7">
+					<p>Aria-label should be used as accessible name. 7</p>
+					<p>Title should be used as accessible description. 7</p>
 				</article>
 			</div>
 
@@ -146,8 +146,8 @@
 		<script>
 			var test = [],
 				el = document.getElementById('article1'),
-			    isSupported = (el instanceof HTMLElement && !(el instanceof HTMLUnknownElement));
-			
+				isSupported = (el instanceof HTMLElement && !(el instanceof HTMLUnknownElement));
+
 			test.push({id: "basic-criteria", pass: isSupported});
 			displaySupportResults(test);
 		</script>

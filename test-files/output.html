@@ -31,15 +31,13 @@
 
 		<div class="test">
 			<h2 class="test-title" id="op-001">Test op-001: Output calculated from two inputs</h2>
-
 			<div class="test-case">
-				<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-					<input type="range" name="b" value="50" /> +
-					<input type="number" name="a" value="10" /> =
-					<output id="output1" name="result"></output>
+				<form oninput="output1.value=parseInt(a.value)+parseInt(b.value)">
+					<input type="range" id="b" value="50" /> +
+					<input type="number" id="a" value="10" /> =
+					<output id="output1" for="b a"></output>
 				</form>
 			</div>
-			
 			<h3 class="code-title">Code</h3>
 			<pre></code>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
 	&lt;input type="range" name="b" id="b" value="50" /> +
@@ -52,7 +50,7 @@
 			<h2 class="test-title" id="op-002">Test op-002: Output with <code>aria-label</code></h2>
 
 			<div class="test-case">
-				<output id="output2" aria-label="aria-label attribute">10</output>
+				<output id="output2" aria-label="aria-label attribute 2">10</output>
 				
 				<p>Aria-label should be used as accessible name</p>
 				<p>No accessible description.</p>
@@ -66,8 +64,8 @@
 			<h2 class="test-title" id="op-003">Test op-003: Output with <code>aria-labelledby</code></h2>
 
 			<div class="test-case">
-				<p id="op-003-labelledby">p referenced by aria-labelledby</p>
-				<output id="output3" aria-labelledby="op-003-labelledby">10</output>
+				<p id="op-003-labelledby3">p referenced by aria-labelledby3</p>
+				<output id="output3" aria-labelledby="op-003-labelledby3">10</output>
 				
 				<p>Aria-labelledby should be used as accessible name</p>
 				<p>No accessible description.</p>
@@ -82,7 +80,7 @@
 			<h2 class="test-title" id="op-004">Test op-004: Output with label</h2>
 
 			<div class="test-case">
-				<label>label wrapping output <output id="output4">10</output></label>
+				<label>label wrapping output 4<output id="output4">10</output></label>
 				
 				<p>Label should be used as accessible name</p>
 				<p>No accessible description.</p>
@@ -96,7 +94,7 @@
 			<h2 class="test-title" id="op-005">Test op-005: Output with <code>title</code> attribute</h2>
 
 			<div class="test-case">
-				<output id="output5" title="title attribute">10</output>
+				<output id="output5" title="title attribute 5">10</output>
 				
 				<p>Title should be used as accessible name</p>
 				<p>No accessible description.</p>
@@ -110,8 +108,8 @@
 			<h2 class="test-title" id="op-006">Test op-006: Output with <code>aria-describedby</code></h2>
 
 			<div class="test-case">
-				<output id="output6" aria-describedby="op-006-describedby">10</output>
-				<p id="op-006-describedby">p referenced by aria-describedby</p>
+				<output id="output6" aria-describedby="op-006-describedby6">10</output>
+				<p id="op-006-describedby6">p referenced by aria-describedby6</p>
 				
 				<p>Aria-describedby should be used as accessible description</p>
 				<p>No accessible name.</p>
@@ -126,9 +124,9 @@
 			<h2 class="test-title" id="op-007">Test op-007: Output with <code>label</code> element &amp; <code>title</code> attribute</h2>
 
 			<div class="test-case">
-				<label for="output7">label referenced by for/id attributes</label>
-				<output id="output7" title="title attribute">10</output>
-				
+				<label for="output7">label referenced by for/id attributes 7</label>
+				<output id="output7" title="title attribute 7">10</output>
+
 				<p>Label should be used as accessible name</p>
 				<p>Title should be used as accessible description</p>
 			</div>	
